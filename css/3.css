@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 500px;
+	height: 335.2px;
+	margin: 30px auto;
+	overflow: hidden;
+	position: relative;
+}
+.arrows{
+	display: none;
+	width: 50px;
+	height: 80px;
+	color: #fff;
+	font-size: 3em;
+	line-height: 80px;
+	text-align: center;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	z-index: 2;
+}
+.image1, .image2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+} 
+.image1 div {
+	background-image: url(../image/1.png);
+}
+.image2 div {
+	background-image: url(../image/2.png);
+	transform: rotateX(180deg);
+}
+.image1 div, .image2 div {
+	width: 100%;
+	height: 83.8px;
+	overflow: hidden;
+	background-size: 100%;
+	transition: transform 1s ease;
+  backface-visibility: hidden;
+}
+.img0 {
+	background-position: 0 0;
+}
+.img1 {
+	background-position: 0 -83.8px;
+}
+.img2 {
+	background-position: 0 -167.6px;
+}
+.img3 {
+	background-position: 0 -251.4px;
+}

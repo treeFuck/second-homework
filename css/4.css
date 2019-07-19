@@ -1,0 +1,53 @@
+.container {
+	width: 1000px;
+	height: 300px;
+	margin: 200px auto;
+	position: relative;
+}
+.images {
+  width: 500px;
+  height: 300px;
+  transition: all 1s ease;
+  position: absolute;
+  left: 250px;
+}
+.arrows{
+	display: none;
+	width: 50px;
+	height: 80px;
+	color: #fff;
+	font-size: 3em;
+	line-height: 80px;
+	text-align: center;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+	top: 45%;
+	margin-top: -40px;
+	z-index: 2;
+}
+.trasform0 {
+  z-index : 5;
+  opacity : 1;
+  transform : translate(0,0) scale(1);
+}
+.trasform1 {
+  z-index : 4;
+  transform : translate(250px,-20px) scale(0.8);
+  opacity : 0.8;
+}
+.trasform2 {
+  z-index : 3;
+  transform : translate(230px,-70px) scale(0.6);
+  opacity : 0.6;
+}
+.trasform3 {
+  z-index : 3;
+  transform : translate(-250px,-70px) scale(0.6);
+  opacity : 0.6;
+}
+.trasform4 {
+  z-index : 4;
+  transform : translate(-230px,-20px) scale(0.8);
+  opacity : 0.8;
+}
